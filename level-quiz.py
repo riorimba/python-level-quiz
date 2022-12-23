@@ -17,14 +17,19 @@ print("""What continent is Germany on?
 #the correct answer
 easyQuestion1 = 3
 
-#to check if user input numbers other than 1-4 
-easyResponse1 = 0
-easyResponse1 = input("Your answer: ")
-easyResponse1 = int(easyResponse1)
-while easyResponse1 >4 or easyResponse1<=0:
-    print("Sorry, Input number must be 1 to 4")
-    easyResponse1 = input("Your answer: ")
-    easyResponse1 = int(easyResponse1)
+#to check if user input is numeric and between 1 and 4
+while True:
+    # Get user input
+    easyResponse1 = input("Enter a number between 1 and 4: ")
+
+    # Check if the input is numeric and between 1 and 4
+    if easyResponse1.isnumeric() and 1 <= int(easyResponse1) <= 4:
+        easyResponse1 = int(easyResponse1)
+        # The input is valid, so break the loop
+        break
+    else:
+        # The input is not valid, so print an error message
+        print("Invalid input. Please enter a number between 1 and 4.")
 
 #to assess the answer is right or wrong and add a score value
 if (easyResponse1 != easyQuestion1):
@@ -42,14 +47,19 @@ print("""which continent is Indonesia located on?
 #the correct answer
 easyQuestion2 = 3
 
-#to check if user input numbers other than 1-4
-easyResponse2 = 0
-easyResponse2 = input("Your answer: ")
-easyResponse2 = int(easyResponse2)
-while easyResponse2 >4 or easyResponse2<=0:
-    print("Sorry, Input number must be 1 to 4")
-    easyResponse2 = input("Your answer: ")
-    easyResponse2 = int(easyResponse2)
+#to check if user input is numeric and between 1 and 4
+while True:
+    # Get user input
+    easyResponse2 = input("Enter a number between 1 and 4: ")
+
+    # Check if the input is numeric and between 1 and 4
+    if easyResponse2.isnumeric() and 1 <= int(easyResponse2) <= 4:
+        easyResponse2 = int(easyResponse2)
+        # The input is valid, so break the loop
+        break
+    else:
+        # The input is not valid, so print an error message
+        print("Invalid input. Please enter a number between 1 and 4.")
 
 #to assess the answer is right or wrong and add a score value
 if (easyResponse2 != easyQuestion2):
@@ -83,14 +93,19 @@ if(score>50):
         #the correct answer
         mediumQuestion1 = 1
 
-        #to check if user input numbers other than 1-4
-        mediumResponse1 = 0
-        mediumResponse1 = input("Your answer: ")
-        mediumResponse1 = int(mediumResponse1)
-        while mediumResponse1 >4 or mediumResponse1<=0:
-            print("Sorry, Input number must be 1 to 4")
-            mediumResponse1 = input("Your answer: ")
-            mediumResponse1 = int(mediumResponse1)
+        #to check if user input is numeric and between 1 and 4
+        while True:
+            # Get user input
+            mediumResponse1 = input("Enter a number between 1 and 4: ")
+
+            # Check if the input is numeric and between 1 and 4
+            if mediumResponse1.isnumeric() and 1 <= int(mediumResponse1) <= 4:
+                mediumResponse1 = int(mediumResponse1)
+                # The input is valid, so break the loop
+                break
+            else:
+                # The input is not valid, so print an error message
+                print("Invalid input. Please enter a number between 1 and 4.")
 
         #to assess the answer is right or wrong and add a score value
         if (mediumResponse1 != mediumQuestion1):
@@ -108,14 +123,19 @@ if(score>50):
         #the correct answer
         mediumQuestion2 = 2
 
-        #to check if user input numbers other than 1-4
-        mediumResponse2 = 0
-        mediumResponse2 = input("Your answer: ")
-        mediumResponse2 = int(mediumResponse2)
-        while mediumResponse2 >4 or mediumResponse2<=0:
-            print("Sorry, Input number must be 1 to 4")
-            mediumResponse2 = input("Your answer: ")
-            mediumResponse2 = int(mediumResponse2)
+        #to check if user input is numeric and between 1 and 4
+        while True:
+            # Get user input
+            mediumResponse2 = input("Enter a number between 1 and 4: ")
+
+            # Check if the input is numeric and between 1 and 4
+            if mediumResponse2.isnumeric() and 1 <= int(mediumResponse2) <= 4:
+                mediumResponse2 = int(mediumResponse2)
+                # The input is valid, so break the loop
+                break
+            else:
+                # The input is not valid, so print an error message
+                print("Invalid input. Please enter a number between 1 and 4.")
 
         #to assess the answer is right or wrong and add a score value
         if (mediumResponse2 != mediumQuestion2):
